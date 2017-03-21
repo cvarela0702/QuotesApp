@@ -1,0 +1,12 @@
+archive/
+build/
+
+resources/sass/.sass-cache/
+resources/css/stylesheets/
+resources/images/
+resources/sass/stylesheets/fonts/otchs/
+phonegap/
+resources/startup/
+phonegap.local.properties
+
+touch/
