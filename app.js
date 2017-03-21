@@ -18,7 +18,10 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'author.AuthorListView',
+        'MainView',
+        'MainPanel'
     ],
 
     icon: {
@@ -44,7 +47,8 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('QuotesApp.view.Main'));
+        //Ext.Viewport.add(Ext.create('QuotesApp.view.Main'));
+        Ext.Viewport.add(Ext.create('QuotesApp.view.MainView'));
     },
 
     onUpdated: function() {
