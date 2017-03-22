@@ -669,6 +669,7 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "QuotesApp.model.Author": [],
+  "QuotesApp.store.Authors": [],
   "QuotesApp.view.Main": [],
   "QuotesApp.view.MainPanel": [],
   "QuotesApp.view.MainView": [],
@@ -1402,6 +1403,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "QuotesApp.model.Author": [],
+  "QuotesApp.store.Authors": [],
   "QuotesApp.view.Main": [
     "widget.main"
   ],

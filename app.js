@@ -17,6 +17,9 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
+    models: ['Author'],
+    stores: ['Authors'],
+
     views: [
         'Main',
         'author.AuthorListView',

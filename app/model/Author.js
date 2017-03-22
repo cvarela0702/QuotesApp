@@ -2,10 +2,10 @@ Ext.define('QuotesApp.model.Author',{
 	extend: 'Ext.data.Model',
 	requires: ['Ext.data.identifier.Uuid'],
 	config: {
-		idProperty: 'id',
+		idProperty: 'entity_id',
 		identifier: 'uuid',
 		fields: [
-			{ name: 'id', type: 'auto' },
+			{ name: 'entity_id', type: 'auto' },
 			{ name: 'first_name', type: 'auto' },
 			{ name: 'last_name', type: 'auto' },
 			{ name: 'dob', type: 'auto' }

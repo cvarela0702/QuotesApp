@@ -2,9 +2,13 @@ Ext.define('QuotesApp.view.author.AuthorListView',{
 	extend: 'Ext.List',
 	xtype: 'authorslist',
 
+	require: [
+		'QuotesApp.store.Authors'
+	],
+
 	config: {
 		title: 'Authors List',
-		iconCls: 'list',
+		iconCls: 'user',
 		cls: 'x-authors',
 		variableHeights: true,
 
@@ -14,9 +18,9 @@ Ext.define('QuotesApp.view.author.AuthorListView',{
 			}
 		},
 
-		data: [
-			{ first_name: 'Christian', last_name: 'Varela', dob: '1982-07-02' }
-		],
+		// data: [
+		// 	{ first_name: 'Christian', last_name: 'Varela', dob: '1982-07-02' }
+		// ],
 
 		store: 'Authors',
 
