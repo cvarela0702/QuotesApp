@@ -51,7 +51,7 @@ Ext.application({
 
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('QuotesApp.view.Main'));
-        Ext.Viewport.add(Ext.create('QuotesApp.view.MainView'));
+        Ext.Viewport.add(Ext.create('QuotesApp.view.quote.QuoteListView'));
     },
 
     onUpdated: function() {

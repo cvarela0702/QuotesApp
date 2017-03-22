@@ -669,11 +669,14 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "QuotesApp.model.Author": [],
+  "QuotesApp.model.Quote": [],
   "QuotesApp.store.Authors": [],
+  "QuotesApp.store.Quotes": [],
   "QuotesApp.view.Main": [],
   "QuotesApp.view.MainPanel": [],
   "QuotesApp.view.MainView": [],
-  "QuotesApp.view.author.AuthorListView": []
+  "QuotesApp.view.author.AuthorListView": [],
+  "QuotesApp.view.quote.QuoteListView": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1403,7 +1406,9 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "QuotesApp.model.Author": [],
+  "QuotesApp.model.Quote": [],
   "QuotesApp.store.Authors": [],
+  "QuotesApp.store.Quotes": [],
   "QuotesApp.view.Main": [
     "widget.main"
   ],
@@ -1415,6 +1420,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "QuotesApp.view.author.AuthorListView": [
     "widget.authorslist"
+  ],
+  "QuotesApp.view.quote.QuoteListView": [
+    "widget.quoteslist"
   ]
 });
 

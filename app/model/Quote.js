@@ -1,38 +1,40 @@
-Ext.define('QuotesApp.model.Author',{
+Ext.define('QuotesApp.model.Quote',{
 	extend: 'Ext.data.Model',
 	requires: ['Ext.data.identifier.Uuid'],
+	
 	config: {
 		idProperty: 'entity_id',
 		identifier: 'uuid',
+
 		fields: [
 			{ name: 'entity_id', type: 'auto' },
-			{ name: 'first_name', type: 'auto' },
-			{ name: 'last_name', type: 'auto' },
-			{ name: 'dob', type: 'auto' },
+			{ name: 'author_id', type: 'auto' },
+			{ name: 'quote', type: 'auto' },
+			{ name: 'location', type: 'auto' },
 			{ name: 'created_at', type: 'auto' }
 		],
 
 		validations: [
 			{
 				type: 'presence',
-				field: 'first_name',
-				message: 'Please provide a first name'
+				field: 'author_id',
+				message: 'Please provide an author_id'
 			},
 			{
 				type: 'presence',
-				field: 'last_name',
-				message: 'Please provide a last name'
+				field: 'quote',
+				message: 'Please provide a Quote'
 			},
 			{
 				type: 'presence',
-				field: 'dob',
-				message: 'Please provide a date of birth'
+				field: 'created_at',
+				message: 'Please provide a date of quote'
 			}
 		],
 
 		proxy: {/*This is the local storage: The local storage proxy will make sure that all data persist into the browser localstorage.*/
 			type: 'localstorage',
-			id: 'authors'
+			id: 'quotes'
 		}
 	}
 });
