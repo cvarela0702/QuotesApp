@@ -9,7 +9,7 @@ Ext.define('QuotesApp.store.Authors',{
 		sorters: 'entity_id',
 		grouper: {
 			groupFn: function(record) {
-				return record.get('first_name')[0];
+				return record.get('last_name')[0];
 			}
 		},
 

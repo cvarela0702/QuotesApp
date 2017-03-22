@@ -23,10 +23,12 @@ Ext.define('QuotesApp.view.author.AuthorListView',{
 		// ],
 
 		store: 'Authors',
+		grouped: true,
+		indexBar: true,
 
 		itemTpl: [
-			'{first_name} {last_name}',
-			'<span>{dob}</span>'
+			'{last_name}, {first_name}',
+			'<br /><span>{dob}</span>'
 		].join('')
 	}
 });
