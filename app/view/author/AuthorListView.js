@@ -23,6 +23,7 @@ Ext.define('QuotesApp.view.author.AuthorListView',{
 		// ],
 
 		store: 'Authors',
+		emptyText: 'No authors found.',
 		grouped: true,
 		indexBar: true,
 

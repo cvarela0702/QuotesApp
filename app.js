@@ -17,14 +17,21 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    models: ['Author'],
-    stores: ['Authors'],
+    models: [
+        'Author',
+        'Quote'
+    ],
+    stores: [
+        'Authors',
+        'Quotes'
+    ],
 
     views: [
         'Main',
         'author.AuthorListView',
         'MainView',
-        'MainPanel'
+        'MainPanel',
+        'quote.QuoteListView'
     ],
 
     icon: {
@@ -51,7 +58,7 @@ Ext.application({
 
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('QuotesApp.view.Main'));
-        Ext.Viewport.add(Ext.create('QuotesApp.view.quote.QuoteListView'));
+        Ext.Viewport.add(Ext.create('QuotesApp.view.MainView'));
     },
 
     onUpdated: function() {

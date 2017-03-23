@@ -3,7 +3,8 @@ Ext.define('QuotesApp.view.MainPanel',{
 	xtype: 'mainpanel',
 	requires: [
 		'Ext.TitleBar',
-		'QuotesApp.view.author.AuthorListView'
+		'QuotesApp.view.author.AuthorListView',
+		'QuotesApp.view.quote.QuoteListView'
 	],
 
 	config: {
@@ -14,7 +15,8 @@ Ext.define('QuotesApp.view.MainPanel',{
 
 		items: [
 			{
-				xtype: 'authorslist',
+				//xtype: 'authorslist',
+				xtype: 'quoteslist',
 				title: 'Authors List',
 				scrollable: true,
 				badgeText: '3'

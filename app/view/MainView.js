@@ -12,6 +12,7 @@ Ext.define('QuotesApp.view.MainView',{
 		items: [
 			{
 				xtype: 'mainpanel',
+				//xtype: 'quoteslist',
 				title: 'Authors'
 			}
 		]
