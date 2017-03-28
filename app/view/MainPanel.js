@@ -16,9 +16,9 @@ Ext.define('QuotesApp.view.MainPanel',{
 
 		items: [
 			{
-				//xtype: 'authorslist',
+				xtype: 'authorslist',
 				//xtype: 'quoteslist',
-				xtype: 'quoteshow',
+				//xtype: 'quoteshow',
 				title: 'Authors List',
 				scrollable: true,
 				badgeText: '3'

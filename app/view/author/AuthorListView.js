@@ -10,7 +10,25 @@ Ext.define('QuotesApp.view.author.AuthorListView',{
 		title: 'Authors List',
 		iconCls: 'user',
 		cls: 'x-authors',
+		onItemDisclosure: true,
 		variableHeights: true,
+
+		items: [
+			{
+				xtype: 'toolbar',
+				docked: 'top',
+				
+				items: [
+					{ xtype: 'spacer' },
+					{
+						xtype: 'searchfield',
+						id: 'authorssearch',
+						placeHolder: 'Search...'
+					},
+					{ xtype: 'spacer' }
+				]
+			}
+		],
 
 		listeners: {
 			itemtap: function(dv,ix,item,e) {

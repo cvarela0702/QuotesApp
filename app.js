@@ -13,6 +13,10 @@
 Ext.application({
     name: 'QuotesApp',
 
+    controllers: [
+        'Authors'
+    ],
+
     requires: [
         'Ext.MessageBox'
     ],
