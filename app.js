@@ -31,7 +31,8 @@ Ext.application({
         'author.AuthorListView',
         'MainView',
         'MainPanel',
-        'quote.QuoteListView'
+        'quote.QuoteListView',
+        'quote.QuoteShow'
     ],
 
     icon: {

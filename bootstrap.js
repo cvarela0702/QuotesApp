@@ -676,7 +676,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "QuotesApp.view.MainPanel": [],
   "QuotesApp.view.MainView": [],
   "QuotesApp.view.author.AuthorListView": [],
-  "QuotesApp.view.quote.QuoteListView": []
+  "QuotesApp.view.quote.QuoteListView": [],
+  "QuotesApp.view.quote.QuoteShow": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1423,6 +1424,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "QuotesApp.view.quote.QuoteListView": [
     "widget.quoteslist"
+  ],
+  "QuotesApp.view.quote.QuoteShow": [
+    "widget.quoteshow"
   ]
 });
 
