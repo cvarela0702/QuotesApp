@@ -14,7 +14,8 @@ Ext.application({
     name: 'QuotesApp',
 
     controllers: [
-        'Authors'
+        'Authors',
+        'Quotes'
     ],
 
     requires: [
@@ -36,7 +37,9 @@ Ext.application({
         'MainView',
         'MainPanel',
         'quote.QuoteListView',
-        'quote.QuoteShow'
+        'quote.QuoteShow',
+        'author.MainView',
+        'quote.QuoteDataItem'
     ],
 
     icon: {
@@ -63,7 +66,8 @@ Ext.application({
 
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('QuotesApp.view.Main'));
-        Ext.Viewport.add(Ext.create('QuotesApp.view.MainView'));
+        //Ext.Viewport.add(Ext.create('QuotesApp.view.MainView'));
+        Ext.Viewport.add(Ext.create('QuotesApp.view.author.MainView'));
     },
 
     onUpdated: function() {

@@ -21,7 +21,7 @@ Ext.define('QuotesApp.view.quote.QuoteShow',{
 
         items: [
         	{
-            	xtype: 'quoteslist',
+            	xtype: 'quoteslist'
             },
         	{
 	            xtype: 'panel',
@@ -36,7 +36,7 @@ Ext.define('QuotesApp.view.quote.QuoteShow',{
                 ].join('')
             },
             {
-            	xtype: 'quoteslist',
+            	xtype: 'quoteslist'
             }
         ]
     },

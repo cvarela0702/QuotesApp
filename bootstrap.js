@@ -669,6 +669,7 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.viewport.WP"
   ],
   "QuotesApp.controller.Authors": [],
+  "QuotesApp.controller.Quotes": [],
   "QuotesApp.model.Author": [],
   "QuotesApp.model.Quote": [],
   "QuotesApp.store.Authors": [],
@@ -677,6 +678,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "QuotesApp.view.MainPanel": [],
   "QuotesApp.view.MainView": [],
   "QuotesApp.view.author.AuthorListView": [],
+  "QuotesApp.view.author.MainView": [],
+  "QuotesApp.view.quote.QuoteDataItem": [],
   "QuotesApp.view.quote.QuoteListView": [],
   "QuotesApp.view.quote.QuoteShow": []
 });
@@ -1408,6 +1411,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
   "QuotesApp.controller.Authors": [],
+  "QuotesApp.controller.Quotes": [],
   "QuotesApp.model.Author": [],
   "QuotesApp.model.Quote": [],
   "QuotesApp.store.Authors": [],
@@ -1423,6 +1427,12 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "QuotesApp.view.author.AuthorListView": [
     "widget.authorslist"
+  ],
+  "QuotesApp.view.author.MainView": [
+    "widget.authormainview"
+  ],
+  "QuotesApp.view.quote.QuoteDataItem": [
+    "widget.quotedataitem"
   ],
   "QuotesApp.view.quote.QuoteListView": [
     "widget.quoteslist"

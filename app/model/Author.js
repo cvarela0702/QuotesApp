@@ -12,6 +12,18 @@ Ext.define('QuotesApp.model.Author',{
 			{ name: 'created_at', type: 'auto' }
 		],
 
+		associations: [
+			{
+				type: 'hasMany',
+				model: 'QuotesApp.model.Quote',
+				name: 'Quotes',
+				associationKey: 'AuthQuotes',
+				autoLoad: false,
+				autoSync: false,
+				primaryKey: 'entity_id'
+			}
+		],
+
 		validations: [
 			{
 				type: 'presence',

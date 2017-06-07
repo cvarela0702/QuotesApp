@@ -32,9 +32,29 @@ Ext.define('QuotesApp.model.Quote',{
 			}
 		],
 
-		proxy: {/*This is the local storage: The local storage proxy will make sure that all data persist into the browser localstorage.*/
-			type: 'localstorage',
-			id: 'quotes'
+		associations: [
+			{
+				type: 'belongsTo',
+				model: 'QuotesApp.model.Author',
+				primaryKey: 'entity_id',
+				foreignKey: 'author_id'
+			}
+		],
+
+		//proxy: {/*This is the local storage: The local storage proxy will make sure that all data persist into the browser localstorage.*/
+		//	type: 'localstorage',
+		//	id: 'quotes'
+		//}
+		proxy: {
+			type: 'rest',
+			url: 'http://localhost:8081/quotesrest',
+			username: 'basic_user',
+			password: 'SecurePassword',
+			withCredentials: true,
+			reader: {
+				type: 'json',
+				rootProperty: '_embedded.quotesrest'
+			}
 		}
 	}
 });

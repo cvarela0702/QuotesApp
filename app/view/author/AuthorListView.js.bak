@@ -1,0 +1,68 @@
+Ext.define('QuotesApp.view.author.AuthorListView',{
+	extend: 'Ext.DataView',
+	//extend: 'Ext.List',
+	xtype: 'authorslist',
+
+	require: [
+		'QuotesApp.store.Authors',
+		'QuotesApp.view.quote.QuoteDataItem'
+	],
+
+	config: {
+		showAnimation: 'flip',
+		autoDestroy: false,
+		title: 'Authors List',
+		iconCls: 'user',
+		cls: 'x-authors',
+		itemCls: 'x-quotes-ext',
+		useComponents: true,
+		defaultType: 'quotedataitem',
+		onItemDisclosure: true,
+		variableHeights: true,
+		striped: true,
+
+		items: [
+			{
+				xtype: 'toolbar',
+				docked: 'top',
+				
+				items: [
+					{
+						xtype: 'button',
+						ui: 'back',
+						flex: 1,
+						text: 'Authors',
+						id: 'authorsbutton'
+					},
+					{
+						xtype: 'searchfield',
+						id: 'authorssearch',
+						placeHolder: 'Search...',
+						flex: 2
+					}
+					//{ xtype: 'spacer' }
+				]
+			}
+		],
+
+		listeners: {
+			itemtap: function(dv,ix,item,e) {
+				setTimeout(function(){dv.deselect(ix);},500);
+			}
+		},
+
+		// data: [
+		// 	{ first_name: 'Christian', last_name: 'Varela', dob: '1982-07-02' }
+		// ],
+
+		store: 'Authors',
+		emptyText: 'No authors found.',
+		grouped: true,
+		indexBar: true,
+
+		itemTpl: [
+			'{last_name}, {first_name}',
+			'<br /><span>{dob}</span>'
+		].join('')
+	}
+});

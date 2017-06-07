@@ -4,20 +4,20 @@ Ext.define('QuotesApp.store.Quotes',{
 
 	config: {
 		model: 'QuotesApp.model.Quote',
-		autoLoad: true,
-		autoSync: true,
-		sorters: 'entity_id',
+		autoLoad: false,
+		autoSync: false,
+		sorters: 'entity_id'
 
-		proxy: {
-			type: 'ajax',
-			url: 'http://localhost:8081/quotes',
-			username: 'basic_user',
-			password: 'SecurePassword',
-			withCredentials: true,
-			reader: {
-				type: 'json',
-				rootProperty: '_embedded.quotes'
-			}
-		}
+		// proxy: {
+		// 	type: 'ajax',
+		// 	url: 'http://localhost:8081/quotes',
+		// 	username: 'basic_user',
+		// 	password: 'SecurePassword',
+		// 	withCredentials: true,
+		// 	reader: {
+		// 		type: 'json',
+		// 		rootProperty: '_embedded.quotes'
+		// 	}
+		// }
 	}
 });
