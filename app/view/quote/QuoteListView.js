@@ -38,6 +38,14 @@ Ext.define('QuotesApp.view.quote.QuoteListView',{
 						id: 'quotessearch',
 						placeHolder: 'Search quotes...',
 						flex: 2
+					},
+					{
+						xtype: 'button',
+						ui: 'plain',
+						flex: 1,
+						//text: 'Add',
+						iconCls: 'add',
+						id: 'addquotesbutton'
 					}
 				]
 			}

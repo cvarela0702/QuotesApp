@@ -25,7 +25,14 @@ Ext.define('QuotesApp.view.author.AuthorListView',{
 						id: 'authorssearch',
 						placeHolder: 'Search...'
 					},
-					{ xtype: 'spacer' }
+					{
+						xtype: 'button',
+						ui: 'plain',
+						flex: 1,
+						//text: 'Add',
+						iconCls: 'add',
+						id: 'addauthorsbutton'
+					}
 				]
 			}
 		],

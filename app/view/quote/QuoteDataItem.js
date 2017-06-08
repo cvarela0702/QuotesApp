@@ -25,7 +25,8 @@ Ext.define('QuotesApp.view.quote.QuoteDataItem',{
 					}
 				]
 			}
-		]
+		],
+		emptyText: 'No authors found.'
 	},
 
 	updateRecord: function(record) {
