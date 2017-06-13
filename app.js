@@ -39,7 +39,8 @@ Ext.application({
         'quote.QuoteListView',
         'quote.QuoteShow',
         'author.MainView',
-        'quote.QuoteDataItem'
+        'quote.QuoteDataItem',
+        'quote.QuotesForm'
     ],
 
     icon: {
@@ -67,6 +68,7 @@ Ext.application({
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('QuotesApp.view.Main'));
         //Ext.Viewport.add(Ext.create('QuotesApp.view.MainView'));
+        //Ext.Viewport.add(Ext.create('QuotesApp.view.quote.QuoteForm'));
         Ext.Viewport.add(Ext.create('QuotesApp.view.author.MainView'));
     },
 

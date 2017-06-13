@@ -19,6 +19,7 @@ Ext.define('QuotesApp.view.author.MainView',{
 				scrollable: true,
 				xtype: 'authorslist',
 				//xtype: 'quoteslist',
+				//xtype: 'quotesform',
 				title: 'Authors'
 			}
 		]
