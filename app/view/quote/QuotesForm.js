@@ -16,6 +16,7 @@ Ext.define('QuotesApp.view.quote.QuotesForm',{
 		timeout: 10,
 		standarSubmit: false,
 		url: 'http://localhost:8081/quotesrest',
+		method: 'post',
 		items: [
 			{
 				xtype: 'toolbar',
@@ -40,9 +41,14 @@ Ext.define('QuotesApp.view.quote.QuotesForm',{
 					},
 					{
 						xtype: 'fieldset',
-						title: 'Add quotes',
-						instructions: 'Please add a quote',
+						//title: 'Add quotes',
+						instructions: 'Please fill the form and tap Submit.',
 						items: [
+							{
+								name: 'entity_id',
+								xtype: 'hiddenfield',
+								value: ''
+							},
 							{
 								name: 'author_id',
 								xtype: 'hiddenfield',

@@ -66,11 +66,12 @@ Ext.define('QuotesApp.controller.Quotes',{
 			values= form.getValues(),
 			quotesform=this.getQuotesFormView();
 
+
 		form.setMasked(true);
 		form.submit({
-			url: 'http://localhost:8081/quotesrest',
-			waitMsg: 'Creating quote...',
-			method: 'POST',
+			url: form.getUrl(),
+			waitMsg: 'Please wait...',
+			method: form.getMethod(),
 			headers: {
 				'Accept' : 'application/json',
 				'Authorization' : 'Basic YmFzaWNfdXNlcjpTZWN1cmVQYXNzd29yZA=='

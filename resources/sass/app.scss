@@ -8,3 +8,15 @@
 
 // Examples of using the icon mixin:
 // @include icon('user');
+
+.x-quotes-ext
+{
+	padding-bottom: 20px;
+    /* border: 1px solid blue; */
+    font-style: normal;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom-style: ridge;
+    border-bottom-width: initial;
+    width: 100% !important;
+}
