@@ -132,13 +132,30 @@ Ext.define('QuotesApp.view.quote.QuoteDataItem',{
 		console.log(opt);
 		record=this.getRecord();
 		console.log(record);
-		QuotesS=Ext.getStore('Quotes');
 		if(buttonID=='yes')
 		{
-			QuotesS.remove(record);
-			console.log("Removed");
-			QuotesS.sync();
-			console.log("Synchronized");
+			Ext.Ajax.request({
+				url: 'http://localhost:8081/quotesrest/'+record.data.entity_id,
+				method: 'DELETE',
+				success:  function(response)
+				{
+					console.log('success');
+					QuotesS=Ext.getStore('Quotes');
+					QuotesS.remove(record);
+				},
+				callback: function(options,success,response){
+					console.log('callback');
+				},
+				failure: function(response,opts) {
+					if(repsonse.timedout) {
+						Ext.Msg.alert('Timeout','The server timed out');
+					} else if(response.aborted) {
+						Ext.Msg.alert('Aborted','The request was aborted');
+					} else {
+						Ext.Msg.alert('Error','Something went wrong with your request');
+					}
+				}
+			});
 		}
 	}
 });
