@@ -116,6 +116,29 @@ Ext.define('QuotesApp.view.quote.QuoteDataItem',{
 	{
 		record=this.getRecord();
 		console.log("Delete: "+record.data.entity_id);
+		Ext.Msg.confirm(
+			"Delete quote",
+			"Are you sure you want to delete the quote?",
+			this.deleterecord,
+			this);
 		//Post delete after confirmation.
+	},
+
+	deleterecord: function(buttonID,value,opt)
+	{
+		console.log("about to delete");
+		console.log(buttonID);
+		console.log(value);
+		console.log(opt);
+		record=this.getRecord();
+		console.log(record);
+		QuotesS=Ext.getStore('Quotes');
+		if(buttonID=='yes')
+		{
+			QuotesS.remove(record);
+			console.log("Removed");
+			QuotesS.sync();
+			console.log("Synchronized");
+		}
 	}
 });
