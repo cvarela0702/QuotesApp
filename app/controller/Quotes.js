@@ -87,11 +87,16 @@ Ext.define('QuotesApp.controller.Quotes',{
 
 	onAddQuotesButtonTap: function(button,e,eOpts) {
 		var amv=this.getAuthorsMainView();
+		this.quotesFormView=Ext.getCmp('quotesform');
 		if(!this.quotesFormView)
 		{
+			console.log('Creating form');
 			this.quotesFormView=Ext.create('QuotesApp.view.quote.QuotesForm');
 		}
 		var qfv=this.quotesFormView;
+		qfv.setValues({ quote: '', location: '', entity_id: ''});
+		qfv.setMethod('post');
+		qfv.setUrl('http://localhost:8081/quotesrest');
 		amv.setActiveItem(qfv);
 	},
 
