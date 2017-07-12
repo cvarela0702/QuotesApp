@@ -674,6 +674,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "QuotesApp.model.Quote": [],
   "QuotesApp.store.Authors": [],
   "QuotesApp.store.Quotes": [],
+  "QuotesApp.utils.CommonFunctions": [],
   "QuotesApp.view.Main": [],
   "QuotesApp.view.MainPanel": [],
   "QuotesApp.view.MainView": [],
@@ -1417,6 +1418,7 @@ Ext.ClassManager.addNameAliasMappings({
   "QuotesApp.model.Quote": [],
   "QuotesApp.store.Authors": [],
   "QuotesApp.store.Quotes": [],
+  "QuotesApp.utils.CommonFunctions": [],
   "QuotesApp.view.Main": [
     "widget.main"
   ],

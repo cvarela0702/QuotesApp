@@ -78,6 +78,19 @@ Ext.define('QuotesApp.controller.Quotes',{
 			},
 			success: function(form,result,datas,datar) {
 				console.log("Success");
+				if(form.getMethod()=='put')
+				{
+					Ext.Msg.alert('Success','The quote was edited successfully');
+					var amv=Ext.getCmp('authormainview');
+					QuotesApp.utils.CommonFunctions.displayQuotesByAuthor(form.getValues().author_id,amv);
+				}
+				else if(form.getMethod()=='post')
+				{
+					Ext.Msg.alert('Success','The quote was added successfully');
+					var amv=Ext.getCmp('authormainview');
+					QuotesApp.utils.CommonFunctions.displayQuotesByAuthor(form.getValues().author_id,amv);
+				}
+				console.log(form.getMethod());
 			},
 			failure: function(form,result) {
 				console.log("Fail");

@@ -19,7 +19,8 @@ Ext.application({
     ],
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'QuotesApp.utils.CommonFunctions'
     ],
 
     models: [

@@ -1,7 +1,9 @@
 Ext.define('QuotesApp.view.author.MainView',{
 	extend: 'Ext.Panel',
 	xtype: 'authormainview',
-
+	id: 'authormainview',
+	itemId: 'authormainview',
+	
 	require: [
 		'QuotesApp.view.author.AuthorListView',
 		'QuotesApp.view.quote.QuoteListView'

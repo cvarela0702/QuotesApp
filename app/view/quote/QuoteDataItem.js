@@ -142,6 +142,7 @@ Ext.define('QuotesApp.view.quote.QuoteDataItem',{
 					console.log('success');
 					QuotesS=Ext.getStore('Quotes');
 					QuotesS.remove(record);
+					Ext.Msg.alert('Deletion','The quote was deleted successfully');
 				},
 				callback: function(options,success,response){
 					console.log('callback');
